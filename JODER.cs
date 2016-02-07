@@ -28,7 +28,7 @@ namespace JODERGenerator
                 length = RNG.Next(min, max+1);
             }
 
-            int generate = length - 4;
+            int generate = length - 5;
             int genletter;
 
             //STRING GENERATION
@@ -56,7 +56,7 @@ namespace JODERGenerator
             -For hillarious results, additional text mechanics might be implemented such as using camelcase, make a letter sequence lowercased and more stupid stuff
             */
             //Generate J
-            genletter = RNG.Next(generate);
+            genletter = RNG.Next(generate+1);
             generate -= genletter;
             for(int i=0; i<=genletter; i++)
             {
@@ -64,7 +64,7 @@ namespace JODERGenerator
             }
 
             //Generate O
-            genletter = RNG.Next(generate);
+            genletter = RNG.Next(generate+1);
             generate -= genletter;
             for (int i = 0; i <= genletter; i++)
             {
@@ -72,7 +72,7 @@ namespace JODERGenerator
             }
 
             //Generate D
-            genletter = RNG.Next(generate);
+            genletter = RNG.Next(generate+1);
             generate -= genletter;
             for (int i = 0; i <= genletter; i++)
             {
@@ -80,7 +80,7 @@ namespace JODERGenerator
             }
 
             //Generate E
-            genletter = RNG.Next(generate);
+            genletter = RNG.Next(generate+1);
             generate -= genletter;
             for (int i = 0; i <= genletter; i++)
             {
@@ -88,7 +88,7 @@ namespace JODERGenerator
             }
 
             //Generate R
-            genletter = RNG.Next(generate);
+            genletter = generate;
             generate -= genletter;
             for (int i = 0; i <= genletter; i++)
             {
