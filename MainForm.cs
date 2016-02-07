@@ -64,7 +64,15 @@ namespace JODERGenerator
 
         private void GenerateBTN_Click(object sender, EventArgs e)
         {
-            TextGenerated.Text = JODER.Generate((int)MinSize.Value, (int)MaxSize.Value);
+            string gen = JODER.Generate((int)MinSize.Value, (int)MaxSize.Value);
+            if (gen == "")
+            {
+                MessageBox.Show("Los parámetros no son válidos. Compruébalos e inténtalo de nuevo.");
+            }
+            else
+            {
+                TextGenerated.Text = gen;
+            }
         }
     }
 }
