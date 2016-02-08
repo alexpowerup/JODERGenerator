@@ -33,7 +33,7 @@ namespace JODERGenerator
 
             //STRING GENERATION
             /*All it has to do:
-            -Each letter can occupy all the spaces it fisically can. For example, for a generation limited to 7 words these can be generated:
+            -Each letter can occupy all the spaces it physically can. For example, for a generation limited to 7 words these can be generated:
               -JJJODER
               -JOOODER
               -JODDDER
