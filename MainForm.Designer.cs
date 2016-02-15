@@ -71,7 +71,7 @@
             0});
             this.MinSize.Name = "MinSize";
             this.MinSize.Size = new System.Drawing.Size(58, 20);
-            this.MinSize.TabIndex = 5;
+            this.MinSize.TabIndex = 2;
             this.MinSize.Value = new decimal(new int[] {
             140,
             0,
@@ -104,7 +104,7 @@
             0});
             this.MaxSize.Name = "MaxSize";
             this.MaxSize.Size = new System.Drawing.Size(58, 20);
-            this.MaxSize.TabIndex = 2;
+            this.MaxSize.TabIndex = 3;
             this.MaxSize.Value = new decimal(new int[] {
             140,
             0,
@@ -130,7 +130,8 @@
             this.TextGenerated.ReadOnly = true;
             this.TextGenerated.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.TextGenerated.Size = new System.Drawing.Size(282, 100);
-            this.TextGenerated.TabIndex = 1;
+            this.TextGenerated.TabIndex = 5;
+            this.TextGenerated.TabStop = false;
             this.TextGenerated.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // CopyBTN
@@ -138,7 +139,7 @@
             this.CopyBTN.Location = new System.Drawing.Point(220, 194);
             this.CopyBTN.Name = "CopyBTN";
             this.CopyBTN.Size = new System.Drawing.Size(75, 23);
-            this.CopyBTN.TabIndex = 2;
+            this.CopyBTN.TabIndex = 1;
             this.CopyBTN.Text = "Copiar";
             this.CopyBTN.UseVisualStyleBackColor = true;
             this.CopyBTN.Click += new System.EventHandler(this.CopyBTN_Click);
@@ -148,7 +149,7 @@
             this.GenerateBTN.Location = new System.Drawing.Point(12, 223);
             this.GenerateBTN.Name = "GenerateBTN";
             this.GenerateBTN.Size = new System.Drawing.Size(283, 34);
-            this.GenerateBTN.TabIndex = 3;
+            this.GenerateBTN.TabIndex = 0;
             this.GenerateBTN.Text = "GENERAR UN JODER";
             this.GenerateBTN.UseVisualStyleBackColor = true;
             this.GenerateBTN.Click += new System.EventHandler(this.GenerateBTN_Click);
