@@ -49,12 +49,7 @@ namespace JODERGenerator
 
         private void CopyBTN_Click(object sender, EventArgs e)
         {
-            //If there is no text to copy, just don't do anything.
-            //If there is, copy to clipboard.
-            if(TextGenerated.Text != "")
-            {
-                Clipboard.SetText(TextGenerated.Text);
-            }
+            
         }
 
         private void MaxSize_ValueChanged(object sender, EventArgs e)
@@ -72,6 +67,12 @@ namespace JODERGenerator
             else
             {
                 TextGenerated.Text = gen;
+                //If there is no text to copy, just don't do anything.
+                //If there is, copy to clipboard.
+                if (TextGenerated.Text != "")
+                {
+                    Clipboard.SetText(TextGenerated.Text);
+                }
             }
         }
     }
